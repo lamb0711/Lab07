@@ -1,5 +1,12 @@
 package edu.handong.csee.java.lab07.prob1;
 import java.util.Scanner;
+/**
+ * It is YearToCentury class that calculates the century given a year.
+ * setter method save input data in YearToCentury class.
+ * WhatCentury method calculate century of input year.
+ * @author magic
+ *
+ */
 public class YearToCentury {
 	int divYear;
 	int modYear;
@@ -39,8 +46,6 @@ public class YearToCentury {
 		
 		System.out.println(year+" is "+ytc.WhatCentury()+"th century.");
 		
-		
-
 	}
 
 }
