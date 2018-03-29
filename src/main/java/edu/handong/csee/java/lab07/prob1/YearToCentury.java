@@ -8,10 +8,10 @@ import java.util.Scanner;//use scanner class
  *
  */
 public class YearToCentury {//YearToCentury class
-	int divYear;
-	int modYear;
-	int yr;
-	int century=0;
+	int divYear;//save year variable that divided by 100
+	int modYear;//save year variable that remainder of divided by 100
+	int yr;//input data year
+	int century=0;//save century of year
 	
 	public void setter(int year) {//setter method save data in class variable yr.
 		yr = year;
@@ -34,7 +34,7 @@ public class YearToCentury {//YearToCentury class
 
 	public static void main(String[] args) {//main method
 		// TODO Auto-generated method stub
-		int year;
+		int year;//save input year
 		
 		Scanner keyboard = new Scanner(System.in);
 		
