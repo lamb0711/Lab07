@@ -1,5 +1,5 @@
 package edu.handong.csee.java.lab07.prob1;//package name
-import java.util.Scanner;//use scanner class
+import java.util.Scanner;//use scanner class 
 /**
  * It is YearToCentury class that calculates the century given a year.
  * setter method save input data in YearToCentury class.
