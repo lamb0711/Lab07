@@ -4,13 +4,20 @@ public class YearToCentury {
 	int divYear;
 	int modYear;
 	int yr;
-	int century;
+	int century=0;
 	
 	public void setter(int year) {
 		yr = year;
 	}
 	
 	public int WhatCentury() {
+		divYear = yr;
+		modYear = yr;
+		
+		century = divYear/100;
+		modYear = yr%100;
+		if(modYear <100) return (int)century;
+		else if(modYear == 0) return (int)century+1;
 		
 	}
 
