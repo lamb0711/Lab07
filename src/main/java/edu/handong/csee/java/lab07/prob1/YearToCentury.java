@@ -14,10 +14,12 @@ public class YearToCentury {
 		divYear = yr;
 		modYear = yr;
 		
-		century = divYear/100;
+		century = divYear/100+1;
 		modYear = yr%100;
-		if(modYear <100) return (int)century;
-		else if(modYear == 0) return (int)century+1;
+		
+		if(modYear == 0) century--;
+		
+		return century;
 		
 	}
 
@@ -33,7 +35,7 @@ public class YearToCentury {
 		year = keyboard.nextInt();
 		ytc.setter(year);
 		
-		System.out.println(year+" is "+WhatCentury()+"th century.");
+		System.out.println(year+" is "+ytc.WhatCentury()+"th century.");
 		
 		
 
