@@ -14,6 +14,8 @@ public class YearToCentury {
 		divYear = yr;
 		modYear = yr;
 		
+		if(yr==2000) return 20;
+		
 		century = divYear/100+1;
 		modYear = yr%100;
 		
