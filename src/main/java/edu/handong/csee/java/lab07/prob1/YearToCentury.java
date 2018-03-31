@@ -17,7 +17,7 @@ public class YearToCentury {//YearToCentury class
 		yr = year;//save input year to yr
 	}
 
-	public int WhatCentury() {//this method calculate century of year. and return century
+	public int whatCentury() {//this method calculate century of year. and return century
 		divYear = yr;//save input year to divYear
 		modYear = yr;//save input year to modYear
 
@@ -44,7 +44,7 @@ public class YearToCentury {//YearToCentury class
 		year = keyboard.nextInt();//input year and save it
 		ytc.setter(year);//call setter method 
 
-		System.out.println(year+" is "+ytc.WhatCentury()+"th century.");//call WhatCentury method and print century 
+		System.out.println(year+" is "+ytc.whatCentury()+"th century.");//call WhatCentury method and print century 
 
 	}
 
