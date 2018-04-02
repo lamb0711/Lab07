@@ -17,8 +17,19 @@ public class Chicken {
 		this.star = s;
 	}
 	
+	public String getName() {
+		return this.name;
+	}
 	
+	public double getPrice() {
+		return this.price;
+	}
 	
+	public int star() {
+		return this.star;
+	}
+	
+
 	
 
 	public static void main(String[] args) {
