@@ -29,7 +29,17 @@ public class Chicken {
 		return this.star;
 	}
 	
-
+	public void setName(String n) {
+		this.name = n;
+	}
+	
+	public void setPrice(double p) {
+		this.price = p;
+	}
+	
+	public void setStar(int s) {
+		this.star = s;
+	}
 	
 
 	public static void main(String[] args) {
