@@ -3,7 +3,7 @@ import java.util.Scanner;//use scanner class
 /**
  * It is YearToCentury class that calculates the century given a year.
  * setter method save input data in YearToCentury class.
- * WhatCentury method calculate century of input year.
+ * whatCentury method calculate century of input year.
  * @author magic
  *
  */
@@ -13,7 +13,7 @@ public class YearToCentury {//YearToCentury class
 	int yr;//input data year
 	int century=0;//save century of year
 
-	public void setter(int year) {//setter method save data in class variable yr.
+	public void setYear(int year) {//setter method save data in class variable yr.
 		yr = year;//save input year to yr
 	}
 
@@ -42,7 +42,7 @@ public class YearToCentury {//YearToCentury class
 
 		System.out.println("Input Year: ");//print message for input year
 		year = keyboard.nextInt();//input year and save it
-		ytc.setter(year);//call setter method 
+		ytc.setYear(year);//call setter method 
 
 		System.out.println(year+" is "+ytc.whatCentury()+"th century.");//call WhatCentury method and print century 
 
