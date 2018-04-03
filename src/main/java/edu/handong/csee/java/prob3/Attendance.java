@@ -13,10 +13,11 @@ public class Attendance {
 		this.absence = 0;
 	}
 	
-	public Attendance(String n, int y, int s) {
+	public Attendance(String n, int y, int s, int a) {
 		this.name = n;
 		this.year = y;
 		this.stdNum = s;
+		this.absence = a;
 	}
 	
 	public void randAbsence() {
@@ -56,6 +57,11 @@ public class Attendance {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		Attendance s_1 = new Attendance();
+		Attendance s_2 = new Attendance();
+		Attendance s_3 = new Attendance("Lucas", 1, 21833222, 0);
+		Attendance s_4 = new Attendance("Martha", 2, 21733444, 0);
+
 
 	}
 
