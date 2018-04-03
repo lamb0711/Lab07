@@ -79,10 +79,11 @@ public class Attendance {
 		s_3.randAbsence();
 		s_4.randAbsence();
 		
+		s_1.compareAbsence();
+		s_2.compareAbsence();
+		s_3.compareAbsence();
+		s_4.compareAbsence();
 		
-
-
-
 	}
 
 }
