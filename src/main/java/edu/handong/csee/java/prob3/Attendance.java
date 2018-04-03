@@ -54,6 +54,10 @@ public class Attendance {
 	public void setStdNum(int s) {//save input data to stdNum variable
 		this.stdNum = s;//save s to stdNum
 	}
+	
+	public void setAbsence(int a) {//save input data to stdNum variable
+		this.absence = a;//save s to stdNum
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -61,6 +65,11 @@ public class Attendance {
 		Attendance s_2 = new Attendance();
 		Attendance s_3 = new Attendance("Lucas", 1, 21833222, 0);
 		Attendance s_4 = new Attendance("Martha", 2, 21733444, 0);
+		
+		s_1.setName("Jess"); s_1.setYear(4); s_1.setStdNum(21400999); s_1.setAbsence(0);
+		s_2.setName("Kent"); s_2.setYear(2); s_2.setStdNum(21700111); s_2.setAbsence(0);
+		
+
 
 
 	}
