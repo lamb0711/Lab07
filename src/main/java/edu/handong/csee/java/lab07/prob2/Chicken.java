@@ -1,5 +1,13 @@
 package edu.handong.csee.java.lab07.prob2;
-
+/**
+ * Chicken class is set and get name, price and star.
+ * Chicken() method is basic method. if input data is not found, implement this method.
+ * Chicken(string, double, int) method is basic method. if input data exist, implement this method.
+ * getName, getPrice, getStar methods are return their variable.
+ * setName, setPrice, setStar methods save input variable to their variable.
+ * @author magic
+ *
+ */
 public class Chicken {
 	public String name;
 	public double price;
