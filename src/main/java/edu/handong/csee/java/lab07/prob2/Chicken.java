@@ -5,16 +5,16 @@ public class Chicken {
 	public double price;
 	public int star;
 	
-	public void Chicken() {
+	public Chicken() {
 		name = "";
 		price = 0.00;
 		star = 0;
 	}
 	
-	public void Chicken(String n, double p, int s) {
-		this.name = n;
-		this.price = p;
-		this.star = s;
+	public Chicken(String name, double price, int star) {
+		this.name = name;
+		this.price = price;
+		this.star = star;
 	}
 	
 	public String getName() {
@@ -48,9 +48,9 @@ public class Chicken {
 	Chicken menu2 = new Chicken("Honey_mustard", 16000.00, 5);
 	Chicken menu3 = new Chicken("Spicey_chicken", 16000.00, 1);
 
-	menu1.set_stars(3);
-	menu2.set_stars(4);
-	menu3.set_stars(1);
+	menu1.setStar(3);
+	menu2.setStar(4);
+	menu3.setStar(1);
 
 
 	}
