@@ -25,7 +25,7 @@ public class Chicken {
 		return this.price;
 	}
 	
-	public int star() {
+	public int getStar() {
 		return this.star;
 	}
 	
@@ -51,6 +51,11 @@ public class Chicken {
 	menu1.setStar(3);
 	menu2.setStar(4);
 	menu3.setStar(1);
+	
+	System.out.println(menu1.getName() + "'s rating is " + menu1.getStar());
+	System.out.println(menu2.getName() + "'s rating is " + menu2.getStar());
+	System.out.println(menu3.getName() + "'s rating is " + menu3.getStar());
+
 
 
 	}
