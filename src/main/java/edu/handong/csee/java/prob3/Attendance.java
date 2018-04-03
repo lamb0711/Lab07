@@ -1,5 +1,5 @@
-package edu.handong.csee.java.prob3;
-import java.util.Random;
+package edu.handong.csee.java.prob3;//package name
+import java.util.Random;//use random class
 /**
  * Attendance class save and print student data. And If the number of absence is greater than 6, the student fails the course.
  * Attendance() method is basic method. if input data is not found, implement this method.
@@ -11,39 +11,39 @@ import java.util.Random;
  * @author magic
  *
  */
-public class Attendance {
-	public String name;
-	public int year;
-	public int stdNum;
-	public int absence;
+public class Attendance {//Attendance class
+	public String name;//save student name
+	public int year;//save student year
+	public int stdNum;//save student number
+	public int absence;//save student absence
 	
-	public Attendance() {
-		this.name = "";
-		this.year = 0;
-		this.stdNum = 0;
-		this.absence = 0;
+	public Attendance() {// if input data is not found, implement this method.
+		this.name = "";//no name
+		this.year = 0;//0 year
+		this.stdNum = 0;//0 student number
+		this.absence = 0;//0 absence
 	}
 	
-	public Attendance(String n, int y, int s, int a) {
-		this.name = n;
-		this.year = y;
-		this.stdNum = s;
-		this.absence = a;
+	public Attendance(String n, int y, int s, int a) {//if input data exist, implement this method.
+		this.name = n;//save input data to name
+		this.year = y;//save input data to year
+		this.stdNum = s;//save input data to stdNum
+		this.absence = a;//save input data to absence
 	}
 	
-	public void randAbsence() {
-		Random randomGen = new Random();
-		int randomInt = randomGen.nextInt(10);
-		this.absence = randomInt;
+	public void randAbsence() {//save random number to absence variable(0~10) 
+		Random randomGen = new Random();//use random class so declare random instance
+		int randomInt = randomGen.nextInt(10);//declare randmInt variable and save random number
+		this.absence = randomInt;//save random number to absence
 	}
 	
-	public void compareAbsence() {
-		if(this.absence > 6) {
-			System.out.println("¡°I¡¯m sorry, "+this.name+". You failed this course");
-		    System.out.println(this.name + " - Number of absence: " + this.absence);
+	public void compareAbsence() {//if student absence is greater than 6, print fail message. if not print grade message.
+		if(this.absence > 6) {//if absence is greater than 6, print fail message
+			System.out.println("¡°I¡¯m sorry, "+this.name+". You failed this course");//fail message
+		    System.out.println(this.name + " - Number of absence: " + this.absence);//fail message and absence
 		}
-		    else
-			System.out.println("We'll see about the grade, " + this.name);
+		    else//if absence is not greater than 6
+			System.out.println("We'll see about the grade, " + this.name);//print grade message and name
 
 	}
 	
