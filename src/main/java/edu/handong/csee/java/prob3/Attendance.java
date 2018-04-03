@@ -79,25 +79,25 @@ public class Attendance {//Attendance class
 		this.absence = a;//save a to absence
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) {//main method
 		// TODO Auto-generated method stub
-		Attendance s_1 = new Attendance();
-		Attendance s_2 = new Attendance();
-		Attendance s_3 = new Attendance("Lucas", 1, 21833222, 0);
-		Attendance s_4 = new Attendance("Martha", 2, 21733444, 0);
+		Attendance s_1 = new Attendance();//declare Attendance instance variable and empty data
+		Attendance s_2 = new Attendance();//declare Attendance instance variable and empty data
+		Attendance s_3 = new Attendance("Lucas", 1, 21833222, 0);//declare Attendance instance variable and initialize data
+		Attendance s_4 = new Attendance("Martha", 2, 21733444, 0);//declare Attendance instance variable and initialize data
 		
-		s_1.setName("Jess"); s_1.setYear(4); s_1.setStdNum(21400999); s_1.setAbsence(0);
-		s_2.setName("Kent"); s_2.setYear(2); s_2.setStdNum(21700111); s_2.setAbsence(0);
+		s_1.setName("Jess"); s_1.setYear(4); s_1.setStdNum(21400999); s_1.setAbsence(0);//save s_1 data to use set methods
+		s_2.setName("Kent"); s_2.setYear(2); s_2.setStdNum(21700111); s_2.setAbsence(0);//save s_2 data to use set methods
 		
-		s_1.randAbsence();
-		s_2.randAbsence();
-		s_3.randAbsence();
-		s_4.randAbsence();
+		s_1.randAbsence();//save random number to s_1.absence variable
+		s_2.randAbsence();//save random number to s_2.absence variable
+		s_3.randAbsence();//save random number to s_3.absence variable
+		s_4.randAbsence();//save random number to s_4.absence variable
 		
-		s_1.compareAbsence();
-		s_2.compareAbsence();
-		s_3.compareAbsence();
-		s_4.compareAbsence();
+		s_1.compareAbsence();//call compareAbsence method and print message
+		s_2.compareAbsence();//call compareAbsence method and print message
+		s_3.compareAbsence();//call compareAbsence method and print message
+		s_4.compareAbsence();//call compareAbsence method and print message
 		
 	}
 
