@@ -1,5 +1,16 @@
 package edu.handong.csee.java.prob3;
 import java.util.Random;
+/**
+ * Attendance class save and print student data. And If the number of absence is greater than 6, the student fails the course.
+ * Attendance() method is basic method. if input data is not found, implement this method.
+ * Attendance(String, int, int ,int) method is basic method. if input data exist, implement this method.
+ * randAbsence() method save random number to each instance.
+ * compareAbsence() method measure student absence and print fail message or grade message.
+ * get methods return variable. And set methods save input data to each variable.
+ * 
+ * @author magic
+ *
+ */
 public class Attendance {
 	public String name;
 	public int year;
@@ -47,6 +58,10 @@ public class Attendance {
 	public int getStdNum() {//return student number variable
 		return this.stdNum;//return stdNum
 	}
+	
+	public int getAbsence() {//return student absence variable
+		return this.absence;//return absence
+	}
 
 	public void setName(String n) {//save input data to name variable
 		this.name = n;//save n to name
@@ -60,8 +75,8 @@ public class Attendance {
 		this.stdNum = s;//save s to stdNum
 	}
 	
-	public void setAbsence(int a) {//save input data to stdNum variable
-		this.absence = a;//save s to stdNum
+	public void setAbsence(int a) {//save input data to absence variable
+		this.absence = a;//save a to absence
 	}
 
 	public static void main(String[] args) {
