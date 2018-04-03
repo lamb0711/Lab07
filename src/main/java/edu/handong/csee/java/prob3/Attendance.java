@@ -27,8 +27,13 @@ public class Attendance {
 	}
 	
 	public void compareAbsence() {
-		if(this.absence > 6)
+		if(this.absence > 6) {
 			System.out.println("¡°I¡¯m sorry, "+this.name+". You failed this course");
+		    System.out.println(this.name + " - Number of absence: " + this.absence);
+		}
+		    else
+			System.out.println("We'll see about the grade, " + this.name);
+
 	}
 	
 	public String getName() {//return name variable
@@ -68,6 +73,12 @@ public class Attendance {
 		
 		s_1.setName("Jess"); s_1.setYear(4); s_1.setStdNum(21400999); s_1.setAbsence(0);
 		s_2.setName("Kent"); s_2.setYear(2); s_2.setStdNum(21700111); s_2.setAbsence(0);
+		
+		s_1.randAbsence();
+		s_2.randAbsence();
+		s_3.randAbsence();
+		s_4.randAbsence();
+		
 		
 
 
