@@ -18,6 +18,17 @@ public class Attendance {
 		this.year = y;
 		this.sutNum = s;
 	}
+	
+	public void randAbsence() {
+		Random randomGen = new Random();
+		int randomInt = randomGen.nextInt(10);
+		this.absence = randomInt;
+	}
+	
+	public void compareAbsence() {
+		if(this.absence > 6)
+			System.out.println("¡°I¡¯m sorry, "+this.name+". You failed this course");
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
