@@ -1,10 +1,6 @@
 package edu.handong.csee.java.lab07.prob2;//package name
 /**
  * Chicken class is set and get name, price and star.
- * Chicken() method is basic method. if input data is not found, implement this method.
- * Chicken(string, double, int) method is basic method. if input data exist, implement this method.
- * getName, getPrice, getStar methods are return their variable.
- * setName, setPrice, setStar methods save input variable to their variable.
  * @author magic
  *
  */
@@ -12,43 +8,73 @@ public class Chicken {//Chicken class
 	public String name; //save chicken name variable
 	public double price;//save chicken price variable
 	public int star;//save star variable
-
+	/**
+	 * Chicken() method is basic method. if input data is not found, implement this method.
+	 * @param name
+	 * @param price
+	 * @param star
+	 */
 	public Chicken() {//if input data is not found, implement this method.
 		name = "";//name empty
 		price = 0.00;//0 price
 		star = 0;//0 star
 	}
+	/**
+	 * Chicken(string, double, int) method is basic method. if input data exist, implement this method.
+	 * @return
+	 */
 
 	public Chicken(String name, double price, int star) {//if input data exist, implement this method.
 		this.name = name;//save input data to name
 		this.price = price;//save input data to price
 		this.star = star;//save input data to star
 	}
-
+	/**
+	 * getName methods are return their variable.
+	 * @return
+	 */
 	public String getName() {//return name variable
 		return this.name;//return name
 	}
-
+	/**
+	 * getPrice methods are return their variable.
+	 * @return
+	 */
 	public double getPrice() {//return price variable
 		return this.price;//return price
 	}
-
+	/**
+	 * getStar methods are return their variable.
+	 * @return
+	 */
 	public int getStar() {//return star variable
 		return this.star;//return star
 	}
-
+	/**
+	 * setName methods save input variable to their variable.
+	 * @param n
+	 */
 	public void setName(String n) {//save input data to name variable
 		this.name = n;//save n to name
 	}
-
+	/**
+	 * setPrice methods save input variable to their variable.
+	 * @param p
+	 */
 	public void setPrice(double p) {//save input data to price variable
 		this.price = p;//save p to price
 	}
-
+	/**
+	 * setStar methods save input variable to their variable.
+	 * @param s
+	 */
 	public void setStar(int s) {//save input data to star variable
 		this.star = s;//save s to star
 	}
-
+	/**
+	 * main method
+	 * @param args
+	 */
 
 	public static void main(String[] args) {//main method
 		// TODO Auto-generated method stub
