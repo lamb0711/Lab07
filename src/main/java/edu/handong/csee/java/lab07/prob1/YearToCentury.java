@@ -2,20 +2,24 @@ package edu.handong.csee.java.lab07.prob1;//package name
 import java.util.Scanner;//use scanner class 
 /**
  * It is YearToCentury class that calculates the century given a year.
- * setter method save input data in YearToCentury class.
- * whatCentury method calculate century of input year.
  * @author magic
- *
  */
 public class YearToCentury {//YearToCentury class
 	int divYear;//save year variable that divided by 100
 	int modYear;//save year variable that remainder of divided by 100
 	int yr;//input data year
 	int century=0;//save century of year
-
+	/**
+	 * setter method save input data in YearToCentury class.
+	 * @param year
+	 */
 	public void setYear(int year) {//setter method save data in class variable yr.
 		yr = year;//save input year to yr
 	}
+	/**
+	 * whatCentury method calculate century of input year.
+	 * @return
+	 */
 
 	public int whatCentury() {//this method calculate century of year. and return century
 		divYear = yr;//save input year to divYear
@@ -31,7 +35,10 @@ public class YearToCentury {//YearToCentury class
 		return century;//return century variable
 
 	}
-
+	/**
+	 * main method
+	 * @param args
+	 */
 	public static void main(String[] args) {//main method
 		// TODO Auto-generated method stub
 		int year;//save input year
